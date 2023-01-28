@@ -1,4 +1,33 @@
-.corpo {
+.corpo__sobre-nos {
     display: flex;
-    
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding-bottom: 107px;
+}
+
+.corpo__mini-texto {
+    font-weight: 600;
+    color: var(--bordo);
+}
+
+.corpo__titulo {
+    color: var(--cinza-900);
+    letter-spacing: -0.02rem;
+    line-height: 125%;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.corpo__sobre-nos--titulo {
+    font-size: 48px;
+}
+
+.corpo__texto-suporte {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--cinza-500);
+    width: 65%;
+    margin: 0 auto;
 }
