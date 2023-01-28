@@ -2,6 +2,7 @@
 
 ![Badge concluido](https://img.shields.io/badge/STATUS-Concluido-green)
 
+![OptimusTech 1](https://user-images.githubusercontent.com/120414128/215295307-c9e763f1-9328-40ba-ba2d-6840e577d81b.png#vitrinedev)
 
 <h2>Descrição</h2>
 
