@@ -37,7 +37,8 @@
     height: 100%;
 }
 
-.nav__link {
+.nav__link,
+.btn {
     color: var(--cinza-500);
 }
 
@@ -47,7 +48,6 @@
 
 .btn {
     padding: 10px 18px;
-    color: var(--cinza-500);
     border-radius: 8px;
 }
 
