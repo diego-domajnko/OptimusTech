@@ -8,7 +8,9 @@
 }
 
 .cabecalho {
-    padding: 18px 112px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 18px 0;
     justify-content: space-between;
     height: 80px;
     box-sizing: border-box;
