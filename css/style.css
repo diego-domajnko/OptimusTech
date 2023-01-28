@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 96px;
+    text-align: center;
 }
 
 .corpo {
