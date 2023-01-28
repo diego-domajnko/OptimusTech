@@ -19,3 +19,5 @@
 body {
     font-family: var(--fonte);
 }
+
+@import url(./header.css);
