@@ -46,7 +46,6 @@
 .cards__titulo {
     font-size: 20px;
     line-height: 30px;
-    color: var(--cinza-900);
     margin-bottom: 8px;
 }
 
@@ -57,7 +56,6 @@
 }
 
 .card__vaga {
-    color: var(--cinza-900);
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 32px;

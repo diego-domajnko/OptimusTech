@@ -12,7 +12,6 @@
 }
 
 .corpo__titulo {
-    color: var(--cinza-900);
     letter-spacing: -0.02rem;
     line-height: 125%;
     font-weight: 600;
