@@ -38,9 +38,9 @@ Não é um site com uma proposta responsiva. Disponível para telas de 1440px.
 Diego Domajnko
 
 <h2>Redes Sociais</h2>
-<p>https://www.linkedin.com/in/diego-domajnko/
+<p><a href="https://www.linkedin.com/in/diego-domajnko/">Linkedin</a>
 <br>
-https://github.com/diego-domajnko</p>
+<a href="https://github.com/diego-domajnko">GitHub</a></p>
 
 <h2>Visite o site</h2>
-https://optimus-tech-iota.vercel.app/
+<a href="https://optimus-tech-iota.vercel.app/">Link para o Vercel</a>
