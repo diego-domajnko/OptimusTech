@@ -8,7 +8,6 @@
   padding-bottom: 96px;
 
   .card__titulo {
-    @include titulo;
     color: $bordo;
     font-size: 60px;
   }

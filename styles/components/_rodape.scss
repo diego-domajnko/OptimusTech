@@ -9,14 +9,6 @@
     @include centerSection(85%);
     @include displayFlex(center, center, 20px, column);
 
-    .corpo__titulo {
-      @include titulo;
-    }
-
-    .corpo__texto-suporte {
-      @include textoSuporte;
-    }
-
     .rodape__form {
       margin: 20px 0 12px;
       @include displayFlex(center, "", 16px, "");

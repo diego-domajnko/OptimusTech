@@ -1,6 +1,22 @@
 @import "../abstract/variaveis";
 @import "../abstract/funcoes";
 
+.corpo__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.corpo__texto-suporte {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $cinza-500;
+  @include centerSection(65%);
+  text-align: center;
+}
+
 .corpo {
   @include centerSection(85%);
   @include displayFlex("", "", 96px, column);
@@ -14,16 +30,8 @@
       color: $bordo;
     }
 
-    .corpo__titulo {
-      @include titulo;
-    }
-
     .corpo__sobre-nos--titulo {
       font-size: 48px;
-    }
-
-    .corpo__texto-suporte {
-      @include textoSuporte;
     }
   }
 }

@@ -26,25 +26,9 @@
   flex-direction: $direction;
 }
 
-@mixin titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
-}
-
 @mixin centerSection($width) {
   width: $width;
   margin: 0 auto;
-}
-
-@mixin textoSuporte {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $cinza-500;
-  @include centerSection(65%);
-  text-align: center;
 }
 
 @mixin btn {

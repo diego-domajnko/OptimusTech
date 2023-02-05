@@ -16,12 +16,7 @@
     }
 
     .vagas__titulo {
-      @include titulo;
       margin: 16px 0 20px;
-    }
-
-    .corpo__texto-suporte {
-      @include textoSuporte;
     }
 
     .vagas__img {
