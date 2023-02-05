@@ -1,0 +1,65 @@
+@import "../abstract/variaveis";
+@import "../abstract/funcoes";
+
+.vagas {
+  @include displayFlex("", "", 64px, column);
+
+  .vagas__cabecalho {
+    @include displayFlex(center, "", "", column);
+
+    .vagas__minitexto {
+      padding: 4px 12px;
+      border-radius: 16px;
+      background-color: $bege-5;
+      color: $bordo;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .vagas__titulo {
+      @include titulo;
+      margin: 16px 0 20px;
+    }
+
+    .corpo__texto-suporte {
+      @include textoSuporte;
+    }
+
+    .vagas__img {
+      width: 100%;
+      margin-top: 64px;
+    }
+  }
+
+  .vagas__container {
+    @include centerSection(65%);
+    @include displayFlex("", "", 64px, column);
+
+    .vagas__cards {
+      @include displayFlex("", "", 24px, column);
+
+      .cards__titulo {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 8px;
+      }
+
+      .vaga__card {
+        border: 1px solid $cinza-200;
+        border-radius: 16px;
+        padding: 24px;
+
+        .card__vaga {
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 32px;
+        }
+
+        & span {
+          color: $cinza-500;
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+}

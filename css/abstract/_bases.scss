@@ -1,0 +1,16 @@
+@import "./variaveis";
+
+body {
+  font-family: $fonte;
+  color: $cinza-900;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+* {
+  box-sizing: border-box;
+}

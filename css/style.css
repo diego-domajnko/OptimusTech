@@ -1,45 +1,398 @@
-@import url(./header.css);
-@import url(./sobre-nos.css);
-@import url(./diferenciais.css);
-@import url(./vagas.css);
-@import url(./avaliacoes.css);
-@import url(./rodape.css);
+@charset "UTF-8";
 
-:root {
-    /* FONTE */
-    --fonte: 'Inter', sans-serif;
-    
-    /* CORES */
-    --branco: #FFFFFF;
-    --cinza-escuro: #3A404E;
-    --bordo: #8E2424;
-    --cinza-50: #F9FAFB;
-    --cinza-200: #EAECF0;
-    --cinza-400: #98A2B3;
-    --cinza-500: #667085;
-    --cinza-900: #101828;
-    --titulo: #3A404E;
-    
-    /* BACKGROUNDS COM TRANSPARENCIA */
-    --bege-5: rgba(142, 36, 36, 0.05);
-    --bege-3: rgba(142, 36, 36, 0.03);
-}
-
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
 body {
-    font-family: var(--fonte);
-    color: var(--cinza-900);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
+  font-family: "Inter", sans-serif;
+  color: #101828;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
 }
 
-.corpo {
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
+* {
+  box-sizing: border-box;
 }
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  flex-direction: row;
+  width: 85%;
+  margin: 0 auto;
+  padding: 18px 0;
+  height: 80px;
+}
+
+.cabecalho .cabecalho__logo {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: 8px;
+  flex-direction: row;
+}
+
+.cabecalho .cabecalho__logo .logo__img {
+  width: 27px;
+  height: 27px;
+}
+
+.cabecalho .cabecalho__logo .nome-da-empresa {
+  color: #3a404e;
+  font-size: 18px;
+}
+
+.cabecalho .cabecalho__nav {
+  margin-right: 10%;
+}
+
+.cabecalho .cabecalho__nav .nav__lista {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: 32px;
+  flex-direction: row;
+  height: 100%;
+}
+
+.cabecalho .cabecalho__nav .nav__lista .nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: 0;
+  flex-direction: row;
+}
+
+.cabecalho .cabecalho__nav .nav__lista .nav__item .nav__link {
+  color: #667085;
+}
+
+.cabecalho .cabecalho__botoes {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: 12px;
+  flex-direction: row;
+}
+
+.cabecalho .cabecalho__botoes .btn {
+  color: #667085;
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
+}
+
+.cabecalho .cabecalho__botoes .btn-colorido {
+  background-color: #8e2424;
+  color: #ffffff;
+}
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.corpo {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.corpo .corpo__sobre-nos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+  padding-bottom: 11px;
+}
+
+.corpo .corpo__sobre-nos .corpo__mini-texto {
+  font-weight: 600;
+  color: #8e2424;
+}
+
+.corpo .corpo__sobre-nos .corpo__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.corpo .corpo__sobre-nos .corpo__sobre-nos--titulo {
+  font-size: 48px;
+}
+
+.corpo .corpo__sobre-nos .corpo__texto-suporte {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.corpo__diferenciais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-bottom: 96px;
+}
+
+.corpo__diferenciais .card__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+  color: #8e2424;
+  font-size: 60px;
+}
+
+.corpo__diferenciais .card__diferencial {
+  margin: 12px 0 8px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.corpo__diferenciais .card__descricao {
+  font-weight: 400;
+  color: #667085;
+}
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.vagas {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  gap: 64px;
+  flex-direction: column;
+}
+
+.vagas .vagas__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: "";
+  flex-direction: column;
+}
+
+.vagas .vagas__cabecalho .vagas__minitexto {
+  padding: 4px 12px;
+  border-radius: 16px;
+  background-color: rgba(142, 36, 36, 0.05);
+  color: #8e2424;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.vagas .vagas__cabecalho .vagas__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 16px 0 20px;
+}
+
+.vagas .vagas__cabecalho .corpo__texto-suporte {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vagas .vagas__cabecalho .vagas__img {
+  width: 100%;
+  margin-top: 64px;
+}
+
+.vagas .vagas__container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  gap: 64px;
+  flex-direction: column;
+}
+
+.vagas .vagas__container .vagas__cards {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  gap: 24px;
+  flex-direction: column;
+}
+
+.vagas .vagas__container .vagas__cards .cards__titulo {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.vagas .vagas__container .vagas__cards .vaga__card {
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.vagas .vagas__container .vagas__cards .vaga__card .card__vaga {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.vagas .vagas__container .vagas__cards .vaga__card span {
+  color: #667085;
+  margin-right: 24px;
+}
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.avaliacoes {
+  padding: 64px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: rgba(142, 36, 36, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: "";
+  flex-direction: column;
+}
+
+.avaliacoes .avaliacoes__minitexto {
+  color: #8e2424;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.avaliacoes .avaliacoes__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 16px 0 32px;
+}
+
+.avaliacoes .perfil__nome {
+  margin: 16px 0 4px;
+}
+
+.avaliacoes .perfil__funcao {
+  color: #667085;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* FONT FAMILY */
+/* CORES */
+/* BACKGROUNDS COM TRANSPARÊNCIA */
+.rodape {
+  background-color: #f9fafb;
+  padding: 96px 0;
+}
+
+.rodape .rodape__box {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.rodape .rodape__box .corpo__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.rodape .rodape__box .corpo__texto-suporte {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rodape .rodape__box .rodape__form {
+  margin: 20px 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: "";
+  gap: 16px;
+  flex-direction: "";
+}
+
+.rodape .rodape__box .rodape__form .form__email {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
+  width: 360px;
+}
+
+.rodape .rodape__box .rodape__form .form__email::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.rodape .rodape__box .rodape__form .form__email:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.rodape .rodape__box .rodape__form .form__email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.rodape .rodape__box .rodape__form .btn {
+  color: #667085;
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
+}
+
+.rodape .rodape__box .rodape__form .btn-colorido {
+  background-color: #8e2424;
+  color: #ffffff;
+}
+
+.rodape .rodape__box .rodape__copyright {
+  font-weight: 400;
+  color: #98a2b3;
+}
+
+/*# sourceMappingURL=style.css.map */

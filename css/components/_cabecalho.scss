@@ -1,0 +1,51 @@
+@import "../abstract/variaveis";
+@import "../abstract/funcoes";
+
+.cabecalho {
+  @include displayFlex(center, space-between, 0, row);
+  @include centerSection(85%);
+  padding: 18px 0;
+  height: 80px;
+
+  .cabecalho__logo {
+    @include displayFlex(center, "", 8px, row);
+
+    .logo__img {
+      @include quadrado(27px);
+    }
+
+    .nome-da-empresa {
+      color: $titulo;
+      font-size: 18px;
+    }
+  }
+
+  .cabecalho__nav {
+    margin-right: 10%;
+
+    .nav__lista {
+      @include displayFlex(center, "", 32px, row);
+      height: 100%;
+
+      .nav__item {
+        @include displayFlex(center, "", 0, row);
+
+        .nav__link {
+          color: $cinza-500;
+        }
+      }
+    }
+  }
+
+  .cabecalho__botoes {
+    @include displayFlex(center, "", 12px, row);
+
+    .btn {
+      @include btn;
+    }
+
+    .btn-colorido {
+      @include btn-colorido;
+    }
+  }
+}

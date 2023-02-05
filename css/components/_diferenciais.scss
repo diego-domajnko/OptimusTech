@@ -1,0 +1,26 @@
+@import "../abstract/variaveis";
+@import "../abstract/funcoes";
+
+.corpo__diferenciais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-bottom: 96px;
+
+  .card__titulo {
+    @include titulo;
+    color: $bordo;
+    font-size: 60px;
+  }
+
+  .card__diferencial {
+    margin: 12px 0 8px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .card__descricao {
+    font-weight: 400;
+    color: $cinza-500;
+  }
+}

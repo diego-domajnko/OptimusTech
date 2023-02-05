@@ -1,0 +1,33 @@
+@import "../abstract/variaveis";
+@import "../abstract/funcoes";
+
+.avaliacoes {
+  padding: 64px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: $bege-3;
+  @include displayFlex(center, "", "", column);
+
+  .avaliacoes__minitexto {
+    color: $bordo;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  .avaliacoes__titulo {
+    @include titulo;
+    margin: 16px 0 32px;
+  }
+
+  .perfil__nome {
+    margin: 16px 0 4px;
+  }
+
+  .perfil__funcao {
+    color: $cinza-500;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
