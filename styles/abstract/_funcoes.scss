@@ -1,14 +1,29 @@
+@mixin fonte14px {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin fonte16px {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin fonte18px {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin fonte20px {
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @mixin displayFlex($alignItems, $justifyContent, $gap, $direction) {
   display: flex;
   align-items: $alignItems;
   justify-content: $justifyContent;
   gap: $gap;
   flex-direction: $direction;
-}
-
-@mixin quadrado($lado) {
-  width: $lado;
-  height: $lado;
 }
 
 @mixin titulo {

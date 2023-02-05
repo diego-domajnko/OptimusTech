@@ -12,8 +12,7 @@
       border-radius: 16px;
       background-color: $bege-5;
       color: $bordo;
-      font-size: 14px;
-      line-height: 20px;
+      @include fonte14px;
     }
 
     .vagas__titulo {
@@ -39,8 +38,7 @@
       @include displayFlex("", "", 24px, column);
 
       .cards__titulo {
-        font-size: 20px;
-        line-height: 30px;
+        @include fonte20px;
         margin-bottom: 8px;
       }
 
@@ -50,8 +48,7 @@
         padding: 24px;
 
         .card__vaga {
-          font-size: 18px;
-          line-height: 28px;
+          @include fonte18px;
           margin-bottom: 32px;
         }
 

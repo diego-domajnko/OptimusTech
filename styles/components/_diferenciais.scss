@@ -14,9 +14,8 @@
   }
 
   .card__diferencial {
+    @include fonte18px;
     margin: 12px 0 8px;
-    font-size: 18px;
-    line-height: 28px;
   }
 
   .card__descricao {

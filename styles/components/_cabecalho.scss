@@ -11,12 +11,13 @@
     @include displayFlex(center, "", 8px, row);
 
     .logo__img {
-      @include quadrado(27px);
+      height: 27px;
+      width: 27px;
     }
 
     .nome-da-empresa {
       color: $titulo;
-      font-size: 18px;
+      @include fonte18px;
     }
   }
 
