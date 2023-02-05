@@ -6,12 +6,14 @@
 body {
   font-family: "Inter", sans-serif;
   color: #101828;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
   display: flex;
-  flex-direction: column;
+  align-items: "";
+  justify-content: "";
   gap: 96px;
+  flex-direction: column;
 }
 
 * {
@@ -42,13 +44,14 @@ body {
 }
 
 .cabecalho .cabecalho__logo .logo__img {
-  width: 27px;
   height: 27px;
+  width: 27px;
 }
 
 .cabecalho .cabecalho__logo .nome-da-empresa {
   color: #3a404e;
   font-size: 18px;
+  line-height: 28px;
 }
 
 .cabecalho .cabecalho__nav {
@@ -99,12 +102,31 @@ body {
 /* FONT FAMILY */
 /* CORES */
 /* BACKGROUNDS COM TRANSPARÊNCIA */
+.corpo__titulo {
+  letter-spacing: -0.02rem;
+  line-height: 125%;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.corpo__texto-suporte {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .corpo {
   width: 85%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  align-items: "";
+  justify-content: "";
   gap: 96px;
+  flex-direction: column;
 }
 
 .corpo .corpo__sobre-nos {
@@ -121,25 +143,8 @@ body {
   color: #8e2424;
 }
 
-.corpo .corpo__sobre-nos .corpo__titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
-}
-
 .corpo .corpo__sobre-nos .corpo__sobre-nos--titulo {
   font-size: 48px;
-}
-
-.corpo .corpo__sobre-nos .corpo__texto-suporte {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #667085;
-  width: 65%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 /* FONT FAMILY */
@@ -153,18 +158,14 @@ body {
 }
 
 .corpo__diferenciais .card__titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
   color: #8e2424;
   font-size: 60px;
 }
 
 .corpo__diferenciais .card__diferencial {
-  margin: 12px 0 8px;
   font-size: 18px;
   line-height: 28px;
+  margin: 12px 0 8px;
 }
 
 .corpo__diferenciais .card__descricao {
@@ -201,21 +202,7 @@ body {
 }
 
 .vagas .vagas__cabecalho .vagas__titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
   margin: 16px 0 20px;
-}
-
-.vagas .vagas__cabecalho .corpo__texto-suporte {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #667085;
-  width: 65%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .vagas .vagas__cabecalho .vagas__img {
@@ -287,10 +274,6 @@ body {
 }
 
 .avaliacoes .avaliacoes__titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
   margin: 16px 0 32px;
 }
 
@@ -321,23 +304,6 @@ body {
   justify-content: center;
   gap: 20px;
   flex-direction: column;
-}
-
-.rodape .rodape__box .corpo__titulo {
-  letter-spacing: -0.02rem;
-  line-height: 125%;
-  font-weight: 600;
-  font-size: 36px;
-}
-
-.rodape .rodape__box .corpo__texto-suporte {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #667085;
-  width: 65%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .rodape .rodape__box .rodape__form {
