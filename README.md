@@ -31,6 +31,7 @@ Não é um site com uma proposta responsiva. Disponível para telas de 1440px.
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>SASS</li>
 </ul>
 
 <h2>Autor</h2>
