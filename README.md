@@ -24,25 +24,23 @@ Para além da proposta da criação dessa landing page, adaptei a página para o
   <li>Rodapé - Formulário</li>
 </ol>
 
-<h2>Tecnologias</h2>
-
-> As linguagens utilizadas neste projeto foram as seguintes:
+<h2>:hammer: Tecnologias</h2>
 
 <ul>
-  <li><a href="" target="_blank"><img src="https://img.shields.io/badge/-HTML5-E34F26?logo=HTML5&logoColor=black&style=flat"/></a></li>
-  <li>CSS</li>
-  <li>SASS</li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=black&style=flat"/></a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML5-E34F26?logo=HTML5&logoColor=black&style=flat"/></a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS3-1572B6?logo=CSS3&logoColor=black&style=flat"/></a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/CSS_preprocessor"><img src="https://img.shields.io/badge/-SASS-CC6699?logo=SASS&logoColor=black&style=flat"/></a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=black&style=flat"/></a></li>
 </ul>
 
-<h2>Autor</h2>
+<h2>:pencil2: Autor</h2>
 <img src="https://avatars.githubusercontent.com/u/120414128?v=4" width=120px>
 Diego Domajnko
 
-<h2>Redes Sociais</h2>
+<h2>:mailbox: Redes Sociais</h2>
 <p><a href="https://www.linkedin.com/in/diego-domajnko/">Linkedin</a>
 <br>
 <a href="https://github.com/diego-domajnko">GitHub</a></p>
 
-<h2>Visite o site</h2>
+<h2>:link: Visite o site</h2>
 <a href="https://optimus-tech-iota.vercel.app/">Link para o Vercel</a>
