@@ -14,7 +14,7 @@ Para além da proposta da criação dessa landing page, adaptei a página para o
 
 > Por 7 dias apliquei meus conhecimentos para a criação das seguintes etapas e seções, uma por dia:
 
-<ol>
+<ol style="display:flex;align-items:center">
   <li>Cabeçalho</li>
   <li>Seção sobre nós</li>
   <li>Seção sobre os diferenciais</li>
