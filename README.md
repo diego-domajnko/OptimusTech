@@ -29,7 +29,7 @@ Para além da proposta da criação dessa landing page, adaptei a página para o
 > As linguagens utilizadas neste projeto foram as seguintes:
 
 <ul>
-  <li>HTML</li>
+  <li><a href="" target="_blank"><img src="https://img.shields.io/badge/-HTML5-E34F26?logo=HTML5&logoColor=black&style=flat"/></a></li>
   <li>CSS</li>
   <li>SASS</li>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=black&style=flat"/></a></li>
