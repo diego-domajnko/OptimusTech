@@ -1,0 +1,138 @@
+@import "./variaveis";
+@import "./funcoes";
+
+// TABLET
+@media (max-width: 1439px) {
+  body {
+    gap: 48px;
+  }
+
+  // CABEÇALHO
+  .cabecalho {
+    .cabecalho__nav {
+      height: 100%;
+      margin: 0;
+      position: relative;
+
+      .fa-bars {
+        display: inline-block;
+      }
+
+      .nav__lista {
+        display: none;
+      }
+
+      .menu--ativo {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: -65px;
+
+        height: auto;
+        width: 150px;
+
+        flex-direction: column;
+        gap: 8px;
+        background-color: $bege-3;
+      }
+    }
+  }
+
+  .corpo__texto-suporte {
+    @include fonte18px;
+  }
+
+  // MAIN
+  .corpo {
+    gap: 48px;
+    width: 95%;
+
+    // SOBRE NÓS
+    .corpo__sobre-nos {
+      gap: 16px;
+      padding: 0;
+
+      .corpo__mini-texto {
+        @include fonte14px;
+      }
+
+      .corpo__sobre-nos--titulo {
+        font-size: 36px;
+      }
+    }
+
+    // DIFERENCIAIS
+    .corpo__diferenciais {
+      padding: 0;
+
+      .card__titulo {
+        font-size: 48px;
+      }
+
+      .card__diferencial {
+        @include fonte16px;
+      }
+
+      .card__descricao {
+        @include fonte14px;
+      }
+    }
+
+    // VAGAS
+    .vagas {
+      gap: 48px;
+
+      .vagas__titulo {
+        margin: 16px 0;
+      }
+
+      .vagas__container {
+        gap: 32px;
+
+        .vagas__cards {
+          gap: 16px;
+
+          .cards__titulo {
+            margin: 0;
+            @include fonte18px;
+          }
+
+          .vaga__card {
+            padding: 16px;
+
+            .card__vaga {
+              @include fonte16px;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    // AVALIAÇÕES
+    .avaliacoes {
+      padding: 32px;
+
+      .avaliacoes__titulo {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  // RODAPÉ
+  .rodape {
+    padding: 48px 0;
+
+    .rodape__box {
+      width: 95%;
+
+      .rodape__form {
+        margin-top: 12px;
+      }
+
+      .rodape__copyright {
+        @include fonte14px;
+      }
+    }
+  }
+}

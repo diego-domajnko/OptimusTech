@@ -2,13 +2,13 @@
 @import "../abstract/funcoes";
 
 .cabecalho {
-  @include displayFlex(center, space-between, 0, row);
+  @include displayFlex(center, space-between, "", "");
   @include centerSection(85%);
   padding: 18px 0;
   height: 80px;
 
   .cabecalho__logo {
-    @include displayFlex(center, "", 8px, row);
+    @include displayFlex(center, "", 8px, "");
 
     .logo__img {
       height: 27px;
@@ -23,13 +23,27 @@
 
   .cabecalho__nav {
     margin-right: 10%;
+    @include displayFlex(center, "", "", "");
+
+    .fa-bars {
+      display: none;
+
+      &::before {
+        display: inline-block;
+        text-align: right;
+        color: $cinza-900;
+      }
+    }
 
     .nav__lista {
-      @include displayFlex(center, "", 32px, row);
+      @include displayFlex(center, "", 32px, "");
+      /* display: flex;
+      align-items: center;
+      gap: 32px; */
       height: 100%;
 
       .nav__item {
-        @include displayFlex(center, "", 0, row);
+        @include displayFlex(center, "", "", "");
 
         .nav__link {
           color: $cinza-500;
@@ -39,7 +53,7 @@
   }
 
   .cabecalho__botoes {
-    @include displayFlex(center, "", 12px, row);
+    @include displayFlex(center, "", 12px, "");
 
     .btn {
       @include btn;

@@ -9,8 +9,7 @@
 }
 
 .corpo__texto-suporte {
-  font-size: 20px;
-  line-height: 30px;
+  @include fonte20px;
   font-weight: 400;
   color: $cinza-500;
   @include centerSection(65%);
