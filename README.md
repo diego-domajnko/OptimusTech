@@ -10,7 +10,7 @@
 
 Durante o período dos 7 dias de desenvolvimento do projeto, utilizei os conhecimentos adquiridos nas aulas do Curso de HTML e CSS da Alura, que fazem parte da Escola Front-End. Apliquei, desta forma, uma estrutura adequada de HTML, além de estilização utilizando flexbox e gridbox.
 
-Não é um site com uma proposta responsiva. Disponível para telas de 1440px.
+Para além da proposta da criação dessa landing page, adaptei a página para o formato responsivo usando técnicas de desktop-first.
 
 > Por 7 dias apliquei meus conhecimentos para a criação das seguintes etapas e seções, uma por dia:
 
@@ -32,6 +32,7 @@ Não é um site com uma proposta responsiva. Disponível para telas de 1440px.
   <li>HTML</li>
   <li>CSS</li>
   <li>SASS</li>
+  <li>JavaScript</li>
 </ul>
 
 <h2>Autor</h2>
