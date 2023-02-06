@@ -32,7 +32,7 @@ Para além da proposta da criação dessa landing page, adaptei a página para o
   <li>HTML</li>
   <li>CSS</li>
   <li>SASS</li>
-  <li>JavaScript</li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=black&style=flat"/></a></li>
 </ul>
 
 <h2>Autor</h2>
