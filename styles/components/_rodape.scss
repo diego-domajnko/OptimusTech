@@ -26,14 +26,6 @@
           color: $cinza-500;
         }
       }
-
-      .btn {
-        @include btn;
-      }
-
-      .btn-colorido {
-        @include btn-colorido;
-      }
     }
 
     .rodape__copyright {

@@ -22,6 +22,18 @@ body {
 /* FONT FAMILY */
 /* CORES */
 /* BACKGROUNDS COM TRANSPARÊNCIA */
+.btn {
+  color: #667085;
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
+}
+
+.btn-colorido {
+  background-color: #8e2424;
+  color: #ffffff;
+}
+
 .cabecalho {
   display: flex;
   align-items: center;
@@ -71,9 +83,6 @@ body {
   justify-content: "";
   gap: 32px;
   flex-direction: "";
-  /* display: flex;
-  align-items: center;
-  gap: 32px; */
   height: 100%;
 }
 .cabecalho .cabecalho__nav .nav__lista .nav__item {
@@ -86,22 +95,15 @@ body {
 .cabecalho .cabecalho__nav .nav__lista .nav__item .nav__link {
   color: #667085;
 }
+.cabecalho .cabecalho__nav .nav__lista .cabecalho__botoes--menu {
+  display: none;
+}
 .cabecalho .cabecalho__botoes {
   display: flex;
   align-items: center;
   justify-content: "";
   gap: 12px;
   flex-direction: "";
-}
-.cabecalho .cabecalho__botoes .btn {
-  color: #667085;
-  padding: 10px 18px;
-  border-radius: 8px;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
-}
-.cabecalho .cabecalho__botoes .btn-colorido {
-  background-color: #8e2424;
-  color: #ffffff;
 }
 
 /* FONT FAMILY */
@@ -322,16 +324,6 @@ body {
   line-height: 24px;
   color: #667085;
 }
-.rodape .rodape__box .rodape__form .btn {
-  color: #667085;
-  padding: 10px 18px;
-  border-radius: 8px;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.051);
-}
-.rodape .rodape__box .rodape__form .btn-colorido {
-  background-color: #8e2424;
-  color: #ffffff;
-}
 .rodape .rodape__box .rodape__copyright {
   font-weight: 400;
   color: #98a2b3;
@@ -362,9 +354,11 @@ body {
     right: -65px;
     height: auto;
     width: 150px;
+    border-radius: 16px;
+    padding: 8px 0;
     flex-direction: column;
     gap: 8px;
-    background-color: rgba(142, 36, 36, 0.03);
+    background-color: #eaecf0;
   }
   .corpo__texto-suporte {
     font-size: 18px;
@@ -442,5 +436,76 @@ body {
   .rodape .rodape__box .rodape__copyright {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    gap: 24px;
+  }
+  body .corpo__titulo {
+    font-size: 24px;
+    text-align: center;
+  }
+  body .corpo__texto-suporte {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body .cabecalho {
+    width: 100%;
+    padding: 18px;
+  }
+  body .cabecalho .cabecalho__nav .nav__lista {
+    right: 0;
+  }
+  body .cabecalho .cabecalho__nav .nav__lista .cabecalho__botoes--menu {
+    display: flex;
+    align-items: "";
+    justify-content: "";
+    gap: 0;
+    flex-direction: column;
+  }
+  body .cabecalho .cabecalho__botoes {
+    display: none;
+  }
+  body .corpo {
+    width: 100%;
+    padding: 0 16px;
+    gap: 30px;
+  }
+  body .corpo .corpo__diferenciais {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  body .corpo .corpo__diferenciais .card__titulo {
+    text-align: left;
+    font-size: 36px;
+  }
+  body .corpo .vagas {
+    gap: 30px;
+  }
+  body .corpo .vagas .vagas__img {
+    margin-top: 24px;
+  }
+  body .corpo .vagas .vagas__container .vagas__cards .cards__titulo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .corpo .vagas .vagas__container .vagas__cards .vaga__card {
+    display: flex;
+    align-items: "";
+    justify-content: "";
+    gap: "";
+    flex-direction: column;
+  }
+  body .corpo .vagas .vagas__container .vagas__cards .vaga__card .card__periodo,
+body .corpo .vagas .vagas__container .vagas__cards .vaga__card .card__salario {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body .rodape .rodape__box .rodape__form {
+    flex-direction: column;
+  }
+  body .rodape .rodape__box .rodape__form .form__email {
+    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

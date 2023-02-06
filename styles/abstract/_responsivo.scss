@@ -30,10 +30,12 @@
 
         height: auto;
         width: 150px;
+        border-radius: 16px;
+        padding: 8px 0;
 
         flex-direction: column;
         gap: 8px;
-        background-color: $bege-3;
+        background-color: $cinza-200;
       }
     }
   }
@@ -132,6 +134,98 @@
 
       .rodape__copyright {
         @include fonte14px;
+      }
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: 767px) {
+  body {
+    gap: 24px;
+
+    .corpo__titulo {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .corpo__texto-suporte {
+      @include fonte14px;
+    }
+
+    // CABEÇALHO
+    .cabecalho {
+      width: 100%;
+      padding: 18px;
+
+      .cabecalho__nav {
+        .nav__lista {
+          right: 0;
+
+          .cabecalho__botoes--menu {
+            @include displayFlex("", "", 0, column);
+          }
+        }
+      }
+
+      .cabecalho__botoes {
+        display: none;
+      }
+    }
+
+    // CORPO
+    .corpo {
+      width: 100%;
+      padding: 0 16px;
+      gap: 30px;
+
+      // DIFERENCIAIS
+      .corpo__diferenciais {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+
+        .card__titulo {
+          text-align: left;
+          font-size: 36px;
+        }
+      }
+
+      // VAGAS
+      .vagas {
+        gap: 30px;
+
+        .vagas__img {
+          margin-top: 24px;
+        }
+
+        .vagas__container {
+          .vagas__cards {
+            .cards__titulo {
+              @include fonte16px;
+            }
+
+            .vaga__card {
+              @include displayFlex("", "", "", column);
+
+              .card__periodo,
+              .card__salario {
+                @include fonte14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rodape {
+      .rodape__box {
+        .rodape__form {
+          flex-direction: column;
+
+          .form__email {
+            width: 250px;
+          }
+        }
       }
     }
   }

@@ -1,6 +1,14 @@
 @import "../abstract/variaveis";
 @import "../abstract/funcoes";
 
+.btn {
+  @include btn;
+}
+
+.btn-colorido {
+  @include btn-colorido;
+}
+
 .cabecalho {
   @include displayFlex(center, space-between, "", "");
   @include centerSection(85%);
@@ -37,9 +45,6 @@
 
     .nav__lista {
       @include displayFlex(center, "", 32px, "");
-      /* display: flex;
-      align-items: center;
-      gap: 32px; */
       height: 100%;
 
       .nav__item {
@@ -49,18 +54,14 @@
           color: $cinza-500;
         }
       }
+
+      .cabecalho__botoes--menu {
+        display: none;
+      }
     }
   }
 
   .cabecalho__botoes {
     @include displayFlex(center, "", 12px, "");
-
-    .btn {
-      @include btn;
-    }
-
-    .btn-colorido {
-      @include btn-colorido;
-    }
   }
 }
