@@ -35,16 +35,12 @@ Para além da proposta da criação dessa landing page, adaptei a página para o
       <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="50px" height="50px"/></a>
     </th>
     <th>
-      <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/CSS_preprocessor"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="50px" height="50px"/></a>
-    </th>
-    <th>
       <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50px" height="50px"/></a>
     </th>
   </tr>
   <tr>
     <th>HTML5</th>
     <th>CSS3</th>
-    <th>SASS</th>
     <th>JavaScript</th>
   </tr>
 </table>
