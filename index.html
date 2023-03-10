@@ -1,160 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptimusTech</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimus Tech</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/reset.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinza: {
+              copyright: '#98A2B3',
+              claro: '#667085',
+              medio: '#3A404E',
+              escuro: '#101828',
+            },
+            bordo: '#8E2424',
+            transparente: {
+              bordo: 'rgba(142, 36, 36, 0.05)',
+              creme: 'rgba(196, 25, 25, 0.03)',
+              menu: 'rgba(234, 236, 240, 0.95)',
+            }
+          },
+          fontFamily: {
+            'inter': ['inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            banner: 'url(./img/img01.png)',
+            avatar: 'url(./img/avatar-perfil01.png)',
+          },
+        }
+      }
+    }
+  </script>
+
+
 </head>
-
-<body>
-    <header class="cabecalho">
-        <div class="cabecalho__logo">
-            <a href="index.html">
-                <img src="./img/logo.png" alt="Logo da empresa OptimusTech" class="logo__img">
-                <h1 class="nome-da-empresa">OptimusTech</h1>
-            </a>
+<body class="font-inter text-cinza-escuro text-base flex flex-col gap-6 md:gap-12 xl:gap-24 text-center">
+  <header class="header">
+    <nav class="px-4 xl:px-0 flex justify-between items-center h-20 m-auto xl:w-4/5 text-cinza-claro font-medium relative">
+      <div class="flex items-center	gap-2 text-cinza-medio">
+        <img src="./img/logo.png" alt="OptimusTech">
+        <h1 class="text-lg">OptimusTech</h1>
+      </div>
+      <div class="xl:hidden text-xl" id="btn__menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="hidden absolute top-full right-4 md:right-1/2 z-10 flex xl:flex flex-col xl:flex-row items-center gap-2 xl:gap-8 bg-transparente-menu xl:bg-transparent p-4 xl:p-0 xl:static rounded-lg" id="nav__menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <div class="hidden gap-3 flex flex-col md:hidden" id="menu__btn">
+          <a class="px-4 py-3 rounded-lg">Entrar</a>
+          <a class="text-white bg-bordo px-4 py-3 rounded-lg">Cadastrar</a>
         </div>
+      </ul>
+      <div class="hidden md:flex gap-3">
+        <a class="px-4 py-3 rounded-lg cursor-pointer">Entrar</a>
+        <a class="text-white bg-bordo px-4 py-3 rounded-lg cursor-pointer">Cadastrar</a>
+      </div>
+    </nav>
+  </header>
 
-        <nav class="cabecalho__nav">
-            <i class="fa-solid fa-bars"></i>
-            <ul class="nav__lista">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Produtos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Recursos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Sobre nós</a>
-                </li>
-                <li class="nav__item cabecalho__botoes--menu">
-                    <a href="#" class="btn">Entrar</a>
-                    <a href="#" class="btn btn-colorido">Cadastrar</a>
-                </li>
-            </ul>
-        </nav>
+  <main class="flex flex-col gap-8 md:gap-12 xl:gap-24 px-4 md:px-0 md:w-11/12 xl:w-4/5 md:m-auto 2xl:max-w-screen-2xl">
+    <section class="flex flex-col gap-4 xl:gap-6 items-center">
+      <span class="text-bordo text-sm xl:text-lg font-semibold">Sobre nós</span>
+      <h2 class="font-semibold text-4xl xl:text-5xl tracking-tight">Por que somos diferentes?</h2>
+      <p class="text-cinza-claro text-sm md:text-lg xl:text-xl w-4/5">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+    </section>
 
-        <div class="cabecalho__botoes">
-            <a href="#" class="btn">Entrar</a>
-            <a href="#" class="btn btn-colorido">Cadastrar</a>
+    <section>
+      <article class="grid gap-4 xl:gap-8 grid-cols-2 md:grid-cols-4">
+        <div class="flex flex-col text-left gap-3">
+          <span class="font-semibold text-bordo text-4xl md:text-5xl xl:text-6xl">400+</span>
+          <span class="font-medium xl:text-lg">Projetos concluídos</span>
+          <p class="text-cinza-claro text-sm xl:text-base">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
         </div>
-    </header>
-
-
-    <main class="corpo">
-        <section class="corpo__sobre-nos">
-            <span class="corpo__mini-texto">Sobre nós</span>
-            <h2 class="corpo__titulo corpo__sobre-nos--titulo">Por que somos diferentes?</h2>
-            <p class="corpo__texto-suporte">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas
-                de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
-        </section>
-
-        <section class="corpo__diferenciais">
-            <div class="diferencias__card">
-                <h3 class="corpo__titulo card__titulo">400+</h3>
-                <p class="card__diferencial">Projetos concluídos</p>
-                <p class="card__descricao">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
-            </div>
-            <div class="diferencias__card">
-                <h3 class="corpo__titulo card__titulo">100+</h3>
-                <p class="card__diferencial">Colaboradores</p>
-                <p class="card__descricao">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos
-                    clientes.</p>
-            </div>
-            <div class="diferencias__card">
-                <h3 class="corpo__titulo card__titulo">20k</h3>
-                <p class="card__diferencial">Downloads</p>
-                <p class="card__descricao">Nossos projetos que estão disponíveis em lojas já foram baixados mais de
-                    20.000 vezes.</p>
-            </div>
-            <div class="diferencias__card">
-                <h3 class="corpo__titulo card__titulo">500+</h3>
-                <p class="card__diferencial">Reviews 5 estrelas</p>
-                <p class="card__descricao">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos
-                    produtos.</p>
-            </div>
-        </section>
-
-        <section class="vagas">
-            <div class="vagas__cabecalho">
-                <span class="vagas__minitexto">Vagas abertas!</span>
-                <h2 class="corpo__titulo vagas__titulo">Estamos procurando por talentos</h2>
-                <p class="corpo__texto-suporte">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-                <img src="./img/img01.png" alt="Imagem de uma reunião com cinco pessoas" class="vagas__img">
-            </div>
-            <div class="vagas__container">
-                <div class="vagas__cards">
-                    <h3 class="cards__titulo">Design</h3>
-                    <div class="vaga__card">
-                        <h4 class="card__vaga">Product Designer</h4>
-                        <span class="card__periodo">Full-time</span>
-                        <span class="card__salario">Faixa salarial: R$7.000</span>
-                    </div>
-                    <div class="vaga__card">
-                        <h4 class="card__vaga">UX Designer</h4>
-                        <span class="card__periodo">Full-time</span>
-                        <span class="card__salario">Faixa salarial: R$6.000</span>
-                    </div>
-                </div>
-                <div class="vagas__cards">
-                    <h3 class="cards__titulo">Desenvolvimento de Software</h3>
-                    <div class="vaga__card">
-                        <h4 class="card__vaga">Desenvolvedor(a) iOS</h4>
-                        <span class="card__periodo">Full-time</span>
-                        <span class="card__salario">Faixa salarial: R$8.000</span>
-                    </div>
-                    <div class="vaga__card">
-                        <h4 class="card__vaga">Desenvolvedor(a) Front-end</h4>
-                        <span class="card__periodo">Full-time</span>
-                        <span class="card__salario">Faixa salarial: R$7.000</span>
-                    </div>
-                    <div class="vaga__card">
-                        <h4 class="card__vaga">Desenvolvedor(a) Back-end</h4>
-                        <span class="card__periodo">Full-time</span>
-                        <span class="card__salario">Faixa salarial: R$8.000</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="avaliacoes">
-            <span class="avaliacoes__minitexto">Veja o que nossos colaboradores falam sobre nós</span>
-            <h2 class="corpo__titulo avaliacoes__titulo">OptimusTech se importa com a saúde dos seus colaboradores e
-                sempre procura nos dar todo tipo de auxílio possível.</h2>
-            <img src="./img/avatar-perfil01.png" alt="Imagem do avatar de perfil do usuário que fez a avaliação"
-                class="avaliacoes__img">
-            <p class="perfil__nome">Júlia Castro</p>
-            <span class="perfil__funcao">Desenvolvedora Web</span>
-        </section>
-    </main>
-
-    <footer class="rodape">
-        <div class="rodape__box">
-            <h2 class="corpo__titulo rodape__titulo">Acompanhe as nossas oportunidades</h2>
-            <p class="corpo__texto-suporte">Seja o primeiro a saber quando novas vagas serão abertas!</p>
-            <form action="#" class="rodape__form">
-                <input type="email" id="form__email" class="form__email" placeholder="Seu e-mail">
-                <input type="submit" class="btn btn-colorido" value="Cadastrar">
-            </form>
-            <p class="rodape__copyright">&copy; 2022 OptimusTech. Todos os direitos reservados.</p>
+        <div class="flex flex-col text-left gap-3">
+          <span class="font-semibold text-bordo text-4xl md:text-5xl xl:text-6xl">100+</span>
+          <span class="font-medium xl:text-lg">Colaboradores</span>
+          <p class="text-cinza-claro text-sm xl:text-base">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes</p>
         </div>
-    </footer>
+        <div class="flex flex-col text-left gap-3">
+          <span class="font-semibold text-bordo text-4xl md:text-5xl xl:text-6xl">20k</span>
+          <span class="font-medium xl:text-lg">Downloads</span>
+          <p class="text-cinza-claro text-sm xl:text-base">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+        </div>
+        <div class="flex flex-col text-left gap-3">
+          <span class="font-semibold text-bordo text-4xl md:text-5xl xl:text-6xl">500+</span>
+          <span class="font-medium xl:text-lg">Reviews 5 estrelas</span>
+          <p class="text-cinza-claro text-sm xl:text-base">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+        </div>
+      </article>
+    </section>
 
-    <script src="./js/main.js"></script>
+    <section class="grid gap-8 md:gap-12 xl:gap-16">
+      <article>
+        <div class="xl:mt-24 xl:mb-16">
+          <span class="inline-block text-bordo rounded-xl px-3 py-1 font-medium text-sm bg-transparente-bordo">Vagas abertas!</span>
+          <h2 class="font-semibold text-2xl md:text-3xl xl:text-4xl tracking-tight mt-4 mb-5">Estamos procurando por talentos</h2>
+          <p class="text-cinza-claro text-sm md:text-lg xl:text-xl">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+        </div>
+        <div aria-label="Cinco pessoas sorrindo durante uma reunião" class="bg-[url('./img/img01.png')] bg-cover bg-no-repeat bg-center h-64 md:h-80 xl:h-96 mt-6 xl:mt-0"></div>
+      </article>
+
+      <article class="w-3/5 text-left m-auto flex flex-col gap-8 xl:gap-16">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-base md:text-lg xl:text-xl font-medium">Design</h3>
+          <div class="p-4 xl:p-6 border border-gray-200 border-solid rounded-2xl flex flex-col md:block">
+            <h4 class="text-base md:text-base xl:text-lg font-medium mb-4 xl:mb-8">Product Designer</h4>
+            <span class="text-sm md:text-base text-cinza-claro font-medium mr-6">Full-time</span>
+            <span class="text-sm md:text-base text-cinza-claro font-medium">Faixa salarial: R$7.000</span>
+          </div>
+          <div class="p-4 xl:p-6 border border-gray-200 border-solid rounded-2xl flex flex-col md:block">
+            <h4 class="text-base md:text-base xl:text-lg font-medium mb-4 xl:mb-8">UX Designer</h4>
+            <span class="text-sm md:text-base text-cinza-claro font-medium mr-6">Full-time</span>
+            <span class="text-sm md:text-base text-cinza-claro font-medium">Faixa salarial: R$6.000</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3 class="text-base md:text-lg xl:text-xl font-medium">Desenvolvimento de Software</h3>
+          <div class="p-4 xl:p-6 border border-gray-200 border-solid rounded-2xl flex flex-col md:block">
+            <h4 class="text-base md:text-base xl:text-lg font-medium mb-4 xl:mb-8">Desenvolvedor(a) iOS</h4>
+            <span class="text-sm md:text-base text-cinza-claro font-medium mr-6">Full-time</span>
+            <span class="text-sm md:text-base text-cinza-claro font-medium">Faixa salarial: R$8.000</span>
+          </div>
+          <div class="p-4 xl:p-6 border border-gray-200 border-solid rounded-2xl flex flex-col md:block">
+            <h4 class="text-base md:text-base xl:text-lg font-medium mb-4 xl:mb-8">Desenvolvedor(a) iOS</h4>
+            <span class="text-sm md:text-base text-cinza-claro font-medium mr-6">Full-time</span>
+            <span class="text-sm md:text-base text-cinza-claro font-medium">Faixa salarial: R$7.000</span>
+          </div>
+          <div class="p-4 xl:p-6 border border-gray-200 border-solid rounded-2xl flex flex-col md:block">
+            <h4 class="text-base md:text-base xl:text-lg font-medium mb-4 xl:mb-8">Desenvolvedor(a) Back-end</h4>
+            <span class="text-sm md:text-base text-cinza-claro font-medium mr-6">Full-time</span>
+            <span class="text-sm md:text-base text-cinza-claro font-medium">Faixa salarial: R$8.000</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="flex flex-col p-6 bg-transparente-creme items-center rounded-2xl">
+      <span class="text-bordo text-sm font-semibold">Veja o que nossos colaboradores falam sobre nós</span>
+      <h2 class="tracking-tight font-medium text-2xl md:text-3xl xl:text-4xl mb-6 mt-4">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
+      <div class="flex flex-col items-center">
+        <div class="bg-[url(./img/avatar-perfil01.png)] w-14 h-14 rounded-full bg-center bg-no-repeat bg-cover" aria-label="Avatar Júlia Castro"></div>
+        <h5 class="font-medium mt-4 mb-1">Júlia Castro</h5>
+        <span class="text-cinza-claro text-sm">Desenvolvedora Web</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="flex flex-col gap-8 py-12 xl:py-24 bg-transparente-creme">
+    <div class="flex flex-col gap-5">
+      <h2 class="tracking-tight font-medium text-2xl md:text-3xl xl:text-4xl">Acompanhe as nossas oportunidades</h2>
+      <p class="text-cinza-claro text-sm md:text-lg xl:text-xl">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+      <form action="#" class="mt-5 flex flex-col md:flex-row items-center md:justify-center gap-4">
+        <input type="email" id="email" class="text-cinza-claro border border-gray-200 border-solid rounded-lg px-4 py-3 placeholder:text-cinza-claro" placeholder="Seu e-mail" aria-label="Seu e-mail">
+        <button class="text-white bg-bordo px-4 py-3 rounded-lg" type="submit">Cadastrar</button>
+      </form>
+    </div>
+    <span class="text-cinza-copyright text-sm xl:text-base">&copy; 2022 OptimusTech. Todos os direitos reservados.</span>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
-
 </html>

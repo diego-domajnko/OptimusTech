@@ -1,11 +1,9 @@
-const hamburguer = document.querySelector('.fa-bars');
+const btnMenu = document.querySelector('#btn__menu');
 
-hamburguer.addEventListener("click", () => {
-    const menu = document.querySelector(".nav__lista").classList;
+btnMenu.addEventListener('click', () => {
+  const menu = document.querySelector('#nav__menu');
+  const botoesLogin = document.querySelector('#menu__btn');
 
-    if (menu.contains("menu--ativo")) {
-        menu.remove("menu--ativo");
-    } else {
-        menu.add("menu--ativo");
-    };
+  menu.classList.toggle('hidden');
+  botoesLogin.classList.toggle('hidden');
 });
